@@ -20,6 +20,7 @@ public partial class Article
 
     public int IdTopics { get; set; }
 
+    [JsonIgnore]
     public virtual User Author { get; set; } = null!;
     
     [JsonIgnore]
