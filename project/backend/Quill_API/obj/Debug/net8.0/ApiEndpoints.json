@@ -17,6 +17,38 @@
   },
   {
     "ContainingType": "Quill_API.Controllers.ArticleController",
+    "Method": "ChangeArticle",
+    "RelativePath": "api/Article/ChangeArticle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "article",
+        "Type": "Quill_API.SupportClass.ArticleClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.ArticleController",
+    "Method": "ChangeStatusArticle",
+    "RelativePath": "api/Article/ChangeStatusArticle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusArticleClass",
+        "Type": "Quill_API.SupportClass.StatusArticleClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.ArticleController",
     "Method": "GetLastetsNews",
     "RelativePath": "api/Article/GetLastetsNews",
     "HttpMethod": "GET",
@@ -82,6 +114,142 @@
     ]
   },
   {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "GetRatings",
+    "RelativePath": "api/Rating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Quill_API.Model.Rating, Quill_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "DeleteRating",
+    "RelativePath": "api/Rating/DeleteRating",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ratingClass",
+        "Type": "Quill_API.SupportClass.RatingClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "GetSilikeRatingsArticle",
+    "RelativePath": "api/Rating/GetDislikeRatingsArticle/{idArticle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArticle",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "GetLikeRatingsArticle",
+    "RelativePath": "api/Rating/GetLikeRatingsArticle/{idArticle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idArticle",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "GetRatingUser",
+    "RelativePath": "api/Rating/GetRatingUser/{idUser}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.RatingController",
+    "Method": "SetRatingUser",
+    "RelativePath": "api/Rating/SetRatingUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ratingClass",
+        "Type": "Quill_API.SupportClass.RatingClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.TopicsController",
+    "Method": "GetTopics",
+    "RelativePath": "api/Topics/GetTopics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Quill_API.Model.Topic, Quill_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.TopicsController",
+    "Method": "GetTopicsOnName",
+    "RelativePath": "api/Topics/GetTopicsOnName/{nameTopic}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nameTopic",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Quill_API.Controllers.UserController",
     "Method": "GetAllUser",
     "RelativePath": "api/User",
@@ -112,6 +280,22 @@
       {
         "Name": "authorizationClass",
         "Type": "Quill_API.SupportClass.AuthorizationClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quill_API.Controllers.UserController",
+    "Method": "ChangeStatusUser",
+    "RelativePath": "api/User/ChangeStatusUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusUserClass",
+        "Type": "Quill_API.SupportClass.StatusUserClass",
         "IsRequired": true
       }
     ],

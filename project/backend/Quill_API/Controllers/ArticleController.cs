@@ -38,13 +38,13 @@ namespace Quill_API.Controllers
                 return BadRequest("Не корректное название статьи!");
 
             if (!HelpFunc.CheckCorrectlyIdUser(QuillBdContext.Context.Users, article.AuthorId))
-                return BadRequest("Пользователь не найден!");
+                return NotFound("Пользователь не найден!");
 
             if (!HelpFunc.CheckUniqueTitle(QuillBdContext.Context.Articles, article.Title, article.AuthorId))
                 return BadRequest("Данный пользователь уже выкладывал статью с таким заголовком!");
 
             if (!HelpFunc.CheckCorrectlyIdTopic(QuillBdContext.Context.Topics, article.IdTopics))
-                return BadRequest("Категория не найдена!");
+                return NotFound("Категория не найдена!");
 
             Article newArticle = new Article()
             {
@@ -67,7 +67,7 @@ namespace Quill_API.Controllers
             Article? article1 = QuillBdContext.Context.Articles.Where(obj => obj.Id == article.Id).FirstOrDefault();
 
             if (article1 == null)
-                return BadRequest("Статья не найдена!");
+                return NotFound("Статья не найдена!");
 
             if (!HelpFunc.CheckCorrectlyNickName(article.Title))
                 return BadRequest("Не корректное название статьи!");
@@ -76,7 +76,7 @@ namespace Quill_API.Controllers
                 return BadRequest("Данный пользователь уже выкладывал статью с таким заголовком!");
 
             if (!HelpFunc.CheckCorrectlyIdTopic(QuillBdContext.Context.Topics, article.IdTopics))
-                return BadRequest("Категория не найдена!");
+                return NotFound("Категория не найдена!");
 
             article1.Title = article.Title;
             article1.Content = article.Content;
@@ -92,7 +92,7 @@ namespace Quill_API.Controllers
             Article? article = QuillBdContext.Context.Articles.Where(obj => obj.Id == statusArticleClass.Id).FirstOrDefault();
 
             if (article == null)
-                return BadRequest("Статья не найдена!");
+                return NotFound("Статья не найдена!");
 
             List<string> allStatus = new List<string>()
             {
@@ -100,12 +100,12 @@ namespace Quill_API.Controllers
                 "deleted",
             };
 
-            if (allStatus.Contains(statusArticleClass.Status))
-                return BadRequest("Статус не найден!");
+            if (!allStatus.Contains(statusArticleClass.Status))
+                return NotFound("Статус статьи не найден!");
 
             article.Status = statusArticleClass.Status;
             QuillBdContext.Context.SaveChanges();
-            return Ok("Статус успешно изменён!");
+            return Ok("Статус статьи успешно изменён!");
         }
     }
 }

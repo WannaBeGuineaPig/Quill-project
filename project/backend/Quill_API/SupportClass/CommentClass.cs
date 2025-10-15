@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Quill_API.Model;
+namespace Quill_API.SupportClass;
 
-public partial class Comment
+public partial class CommentClass
 {
     public int Id { get; set; }
 
@@ -17,10 +17,4 @@ public partial class Comment
     public int ArticleId { get; set; }
 
     public int AuthorId { get; set; }
-
-    [JsonIgnore]
-    public virtual Article Article { get; set; } = null!;
-
-    [JsonIgnore]
-    public virtual User Author { get; set; } = null!;
 }

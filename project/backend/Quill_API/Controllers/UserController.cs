@@ -102,12 +102,12 @@ namespace Quill_API.Controllers
                 "deleted",
             };
 
-            if (allStatus.Contains(statusUserClass.Status))
-                return BadRequest("Статус не найден!");
+            if (!allStatus.Contains(statusUserClass.Status))
+                return BadRequest("Статус пользователя не найден!");
 
             user.Status = statusUserClass.Status;
             QuillBdContext.Context.SaveChanges();
-            return Ok("Статус успешно изменён!");
+            return Ok("Статус пользователя успешно изменён!");
         }
     }
 }
