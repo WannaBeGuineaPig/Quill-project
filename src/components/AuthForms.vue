@@ -77,7 +77,7 @@ const submitRegister = async () => {
       password: registerData.value.password,
       
     }
-    console.log('Отправка данных1:', userData)
+    console.log('Отправка данных регистрации:', userData)
     console.log("props", props)
     // emit("register",userData)
 
