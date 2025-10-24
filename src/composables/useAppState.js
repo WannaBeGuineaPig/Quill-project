@@ -110,9 +110,10 @@ export function useAppState() {
       role:"user",
       status:"active"
     }
-    console.log('Отправка данных2:', userData)
+    console.log('Отправка данных:', userData)
 
     const result = await registerUser(userData)
+    return { success: true, message: "Успешная регистрация" }
   }
   catch(error){
     console.log(error)

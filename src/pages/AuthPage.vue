@@ -12,16 +12,27 @@ const handleSwitch = (type) => {
   router.push({ name: type })
 }
 
-const handleLogin = (data) => {
-  const ok = login(data)
-  console.log(ok)
-  if (ok) router.push({ name: 'home' })
+const handleLogin = async(data) => {
+  const ok = await login(data)
+
+  if(ok.success){
+    console.log(ok)
+    alert("Успешная авторизация")
+    router.push({ name: 'home' })
+  }
+  
 }
 
-const handleRegister = (data) => {
-  console.log("authpage registr")
-  const ok = register(data)
-  if (ok) router.push({ name: 'login' })
+const handleRegister = async(data) => {
+  
+  const ok = await register(data)
+    if(ok.success){
+      alert("Успешная регистрация")
+      router.push({ name: 'login' })
+    }
+    else{
+      alert(ok.message)
+    }
 }
 </script>
 
