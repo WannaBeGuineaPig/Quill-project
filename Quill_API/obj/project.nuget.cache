@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RY7SCDG5B6ZyG/+MBnBiFmzOiQNoplM//sZ18Zl1r2Bug+AKhBUKb06kQt2M0JfhbqZg/egfW8J8zh2NuPD2Q==",
+  "dgSpecHash": "KOW6gYAxT6745mVGxf5c9Rg9d4agtNIuzfp6NGbaC1Q72CEccZDh/vF5wt6lH+TeD5hRzcsioWOYV4Ft7P81AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Любовь\\Downloads\\Quill_API\\Quill_API\\Quill_API.csproj",
+  "projectFilePath": "C:\\Users\\Любовь\\Desktop\\back\\Quill_API\\Quill_API\\Quill_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Любовь\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Любовь\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

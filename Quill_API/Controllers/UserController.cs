@@ -17,7 +17,7 @@ namespace Quill_API.Controllers
         }
 
         [HttpPost("AuthorizationUser")]
-        public ActionResult AuthorizationUser([FromBody] SupportClass.AuthorizationClass authorizationClass)
+        public ActionResult<User> AuthorizationUser([FromBody] SupportClass.AuthorizationClass authorizationClass)
         {
             if (!HelpFunc.CheckCorrectlyMailAddress(authorizationClass.email)) 
                 return BadRequest("Не корректная почта!");
@@ -35,7 +35,7 @@ namespace Quill_API.Controllers
         public ActionResult RegistrationUser(User user)
         {
             if (!HelpFunc.CheckCorrectlyMailAddress(user.Email)) 
-                return BadRequest("Введена некорректная почта!!!");
+                return BadRequest("Введена некорректная почта!");
             
             if (HelpFunc.CheckExitMail(QuillBdContext.Context.Users, user.Email)) 
                 return BadRequest("Пользователь с такой почтой уже существует!");
