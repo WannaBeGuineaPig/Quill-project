@@ -1,24 +1,29 @@
-# Quill
-Сайт с новостями
+# staff_project
 
-## Введение
-Проект Quill представляет собой веб-приложение, разработанное специально для просмотра, опубликования и оценивание новостей. Оно обеспечивает пользователей удобным интерфейсом и простым функционалом для работы с новостной лентой.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Установка (Windows)
+## Recommended IDE Setup
 
-В будущем...
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Документация
+## Customize configuration
 
-В будущем ...
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Описание коммитов
-| Название | Описание                                                        |
-|----------|-----------------------------------------------------------------|
-| docs	   | Обновление документации                                         |
-| feat	   | Добавление нового функционала                                   |
-| fix	   | Исправление ошибок                                              |
-| perf	   | Изменения направленные на улучшение производительности          |
-| refactor | Правки кода без исправления ошибок или добавления новых функций |
-| revert   | Откат на предыдущие коммиты                                     |
-| style	   | Правки по кодстайлу (табы, отступы, точки, запятые и т.д.)      |
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
