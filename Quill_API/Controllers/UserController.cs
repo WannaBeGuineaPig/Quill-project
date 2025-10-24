@@ -35,7 +35,7 @@ namespace Quill_API.Controllers
         public ActionResult RegistrationUser(User user)
         {
             if (!HelpFunc.CheckCorrectlyMailAddress(user.Email)) 
-                return BadRequest("Не корректная почта!");
+                return BadRequest("Введена некорректная почта!!!");
             
             if (HelpFunc.CheckExitMail(QuillBdContext.Context.Users, user.Email)) 
                 return BadRequest("Пользователь с такой почтой уже существует!");
