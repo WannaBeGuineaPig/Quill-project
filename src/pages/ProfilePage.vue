@@ -9,11 +9,17 @@ const { state, editUser } = useAppState()
 const currentUser =  state.currentUser
 
 
-const handleSave = (data) => {
+const handleSave = async(data) => {
   if (state.currentUser) {
     console.log(data)
-    const ok = editUser(data)
-    console.log(ok)
+    const ok = await editUser(data)
+
+    if(ok.success){ 
+      alert("Успешное изменение ")
+    }
+    else{
+      alert(ok.message)
+    }
   }
 }
 

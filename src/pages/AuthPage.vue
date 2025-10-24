@@ -20,7 +20,9 @@ const handleLogin = async(data) => {
     alert("Успешная авторизация")
     router.push({ name: 'home' })
   }
-  
+  else{
+      alert(ok.message)
+    }
 }
 
 const handleRegister = async(data) => {
