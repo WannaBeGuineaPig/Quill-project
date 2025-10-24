@@ -27,7 +27,7 @@ const handleRegister = async(data) => {
   
   const ok = await register(data)
     if(ok.success){
-      alert("Успешная регистрация")
+      alert("Успешная регистрация!")
       router.push({ name: 'login' })
     }
     else{
