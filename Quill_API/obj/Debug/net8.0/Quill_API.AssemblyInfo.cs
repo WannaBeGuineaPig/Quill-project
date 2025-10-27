@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quill_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a463bd63233a587a90c4e3d32acc1d0d14d18cd3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaa49297f2398037d9dfbb1723c4966576610070")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quill_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quill_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -71,6 +71,7 @@ namespace Quill_API.Controllers
                        TopicName = x.IdTopicsNavigation.NameTopics,
                        PublishedAt = x.PublishedAt,
                        AuthorName = x.Author.Nickname,
+                       Image = x.Image,
                        Likes = x.LikesAmount.ToString(),
                        Dislikes = x.DislikesAmount.ToString(),
                        CommentsCount = x.Comments.Count(c => c.Status == "active")
@@ -105,6 +106,7 @@ namespace Quill_API.Controllers
                           TopicName = x.IdTopicsNavigation.NameTopics,
                           PublishedAt = x.PublishedAt,
                           AuthorName = x.Author.Nickname,
+                          Image = x.Image,
                           Likes = x.LikesAmount.ToString(),
                           Dislikes = x.DislikesAmount.ToString(),
                           CommentsCount = x.Comments.Count(c => c.Status == "active")
@@ -122,7 +124,7 @@ namespace Quill_API.Controllers
         [HttpGet("GetLastetsNews")]
         public List<Article> GetLastetsNews()
         {
-            return QuillBdContext.Context.Articles.Where(x => x.Status=="active").OrderBy(obj => obj.PublishedAt).ToList();
+            return QuillBdContext.Context.Articles.OrderByDescending(obj => obj.PublishedAt).ToList();
         }
 
         [HttpGet("GetOldNews")]
@@ -154,6 +156,7 @@ namespace Quill_API.Controllers
                         PublishedAt = x.PublishedAt,
                         AuthorName = x.Author.Nickname,
                         AuthorId = x.Author.Id,
+                        Image = x.Image,
                         Likes = x.LikesAmount,
                         Dislikes = x.DislikesAmount
                     })
@@ -198,6 +201,18 @@ namespace Quill_API.Controllers
                 IdTopics = article.IdTopics,
             };
 
+            if (article.Image is not null)
+            {
+                try
+                {
+                    newArticle.Image = Convert.FromBase64String(article.Image);
+                }
+                catch (System.FormatException ex)
+                {
+                    return BadRequest("Не корректный формат изображения!");
+                }
+            }
+
             QuillBdContext.Context.Articles.Add(newArticle);
             QuillBdContext.Context.SaveChanges();
             return Ok("Статья добавлена!");
@@ -223,6 +238,18 @@ namespace Quill_API.Controllers
             article1.Title = article.Title;
             article1.Content = article.Content;
             article1.IdTopics = article.IdTopics;
+
+            if (article.Image is not null)
+            {
+                try
+                {
+                    article1.Image = Convert.FromBase64String(article.Image);
+                }
+                catch (System.FormatException ex)
+                {
+                    return BadRequest("Не корректный формат изображения!");
+                }
+            }
 
             QuillBdContext.Context.SaveChanges();
             return Ok("Данные статьи обновлны!");

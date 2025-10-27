@@ -15,5 +15,6 @@
         public int AuthorId { get; set; }
 
         public int IdTopics { get; set; }
+        public string? Image { get; set; }
     }
 }

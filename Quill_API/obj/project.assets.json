@@ -2734,23 +2734,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Любовь\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Любовь\\Desktop\\back\\Quill_API\\Quill_API\\Quill_API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Quill-project\\Quill_API\\Quill_API.csproj",
       "projectName": "Quill_API",
-      "projectPath": "C:\\Users\\Любовь\\Desktop\\back\\Quill_API\\Quill_API\\Quill_API.csproj",
-      "packagesPath": "C:\\Users\\Любовь\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Любовь\\Desktop\\back\\Quill_API\\Quill_API\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Quill-project\\Quill_API\\Quill_API.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Quill-project\\Quill_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Любовь\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2771,7 +2771,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2811,7 +2817,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

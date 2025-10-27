@@ -18,6 +18,7 @@ public partial class Article
     public int AuthorId { get; set; }
 
     public int IdTopics { get; set; }
+    public byte[]? Image { get; set; }
 
     public virtual User Author { get; set; } = null!;
 
