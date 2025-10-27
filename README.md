@@ -6,10 +6,10 @@
 
 ## Разработчики
 
-Семенов Матвей(https://github.com/WannaBeGuineaPig)
-Худяков Руслан(https://github.com/rusln4)
-Иванова Любовь(https://github.com/lyuubaa)
-Юмагужина Диана(https://github.com/YumaguzhinaDiana)
+* [Семенов Матвей](https://github.com/WannaBeGuineaPig)
+* [Худяков Руслан](https://github.com/rusln4)
+* [Иванова Любовь](https://github.com/lyuubaa)
+* [Юмагужина Диана](https://github.com/YumaguzhinaDiana)
 
 ## Стэк технологий
 
