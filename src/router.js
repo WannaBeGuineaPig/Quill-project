@@ -7,6 +7,7 @@ import AuthPage from './pages/AuthPage.vue'
 import ProfilePage from './pages/ProfilePage.vue'
 import AdminPage from './pages/AdminPage.vue'
 import ArticleForm from './components/ArticleForm.vue'
+import ArticleFormPage from './pages/ArticleFormPage.vue'
 
 const routes = [
   { path: '/', name: 'home', component: ArticlesPage },
@@ -15,7 +16,8 @@ const routes = [
   { path: '/register', name: 'register', component: AuthPage, props: { formType: 'register' } },
   { path: '/profile', name: 'profile', component: ProfilePage },
   { path: '/admin', name: 'admin', component: AdminPage },
-  {path:'/articleAdding', name:'addArticle', component:ArticleForm}
+   { path: '/article/new', name: 'addArticle', component: ArticleFormPage },
+  { path: '/article/edit/:id', name: 'editArticle', component: ArticleFormPage, props: true }
 ]
 
 const router = createRouter({

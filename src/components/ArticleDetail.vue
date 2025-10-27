@@ -1,8 +1,8 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed , onUnmounted} from 'vue'
 import { useAppState } from '@/composables/useAppState'
 
-const { formatDate } = useAppState()
+const { formatDate, } = useAppState()
 const props = defineProps({
   isLoggedIn: {
     type: Boolean,
@@ -55,12 +55,16 @@ const vote = (value) => {
   emit('vote', value)
 }
 
-const editArticle = () => {
-  emit('edit-article')
+const editArticle = (id) => {
+
+  emit('edit-article', id)
 }
 
-const deleteArticle = () => {
-  emit('delete-article')
+const deleteArticle = () => 
+{
+  const confirmDelete = confirm("Вы уверены, что хотите удалить статью? Действие невозможно будет отменить")
+  if(confirmDelete){
+    emit('delete-article')}
 }
 
 const handleDeleteComment = (commentId) => {
@@ -72,6 +76,10 @@ const handleDeleteComment = (commentId) => {
 const goBack = () => {
   emit('back-to-list')
 }
+
+onUnmounted(() => {
+  
+})
 
 // Вычисляемое свойство для отформатированных комментариев
 const formattedComments = computed(() => {
@@ -87,7 +95,7 @@ const formattedComments = computed(() => {
     <div class="row space-between">
       <button class="btn btn-secondary" @click="goBack">← Назад к списку</button>
       <div class="row article-actions" v-if="isLoggedIn">
-        <button class="btn btn-secondary" v-if="isAuthor" @click="editArticle">Редактировать</button>
+        <button class="btn btn-secondary" v-if="isAuthor" @click="editArticle(currentArticle.id)">Редактировать</button>
         <button class="btn btn-danger" v-if="isAuthor || isAdmin" @click="deleteArticle">Удалить</button>
       </div>
     </div>
@@ -118,6 +126,15 @@ const formattedComments = computed(() => {
           </button>
         </div>
       </div>
+    </div>
+     <div class="article-image-section" v-if="currentArticle.hasImage">
+      <img 
+        :src="currentArticle.imageUrl" 
+        :alt="currentArticle.title"
+        class="article-image"
+        @error="handleImageError"
+      />
+      
     </div>
     
     <div class="article-content">

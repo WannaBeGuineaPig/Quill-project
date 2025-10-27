@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import { useAppState } from '../composables/useAppState'
 
 const props = defineProps({
@@ -14,8 +14,19 @@ const {getArticlesOnUser, formatDate} = useAppState()
 const emit = defineEmits(['editUser', 'view-article'])
 
 
-
+const visibleArticlesCount = ref(8)
+const articlesPerLoad = 8
 const userArticlesList = ref([])
+
+const visibleArticles = computed(() => {
+ 
+  return userArticlesList.value.slice(0, visibleArticlesCount.value)
+})
+
+const hasMoreArticles = computed(() => {
+  return visibleArticlesCount.value < userArticlesList.value.length
+})
+
 
 const loadArticles = async() => {
   try{
@@ -60,6 +71,13 @@ const saveProfile = () => {
 const viewArticle = (articleId) => {
   emit('view-article', articleId)
 }
+
+const loadMore = () => {
+  if (hasMoreArticles.value) {
+    visibleArticlesCount.value += articlesPerLoad
+  }
+}
+
 </script>
 
 <template>
@@ -92,7 +110,7 @@ const viewArticle = (articleId) => {
     <div class="user-articles">
       <h3 class="card-title">Мои статьи</h3>
       <div class="articles-grid">
-         <article v-for="article in userArticlesList" 
+         <article v-for="article in visibleArticles" 
         :key="article.id"
        class="card article-card stack">
         <!-- Здесь будут статьи пользователя -->
@@ -110,6 +128,11 @@ const viewArticle = (articleId) => {
         <!-- </div> -->
        
       </div>
+    </div>
+    <div class="load-more" v-if="hasMoreArticles">
+      <button class="btn btn-outline" @click="loadMore">
+        Загрузить еще 
+      </button>
     </div>
   </section>
 </template>
@@ -137,6 +160,16 @@ const viewArticle = (articleId) => {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+.load-more{
+  display: flex;
+  justify-content: center;
+}
+.load-more button{
+  margin-top: 20px;
+  color: var(--color-heading);
+  background: rgba(124,58,237,0.15);
+}
+
 
 .user-articles h3 {
   margin-bottom: 1.5rem;

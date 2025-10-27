@@ -116,6 +116,7 @@ const viewArticle = (articleId) => {
 }
 
 const addArticle = () => {
+  
   emit('add-article')
 }
 
