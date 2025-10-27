@@ -65,7 +65,6 @@ const profileData = ref({
 const saveProfile = () => {
   console.log("ProfileData",profileData)
   emit('editUser', profileData.value)
-  alert("Успешное сохранение")
 }
 
 const viewArticle = (articleId) => {
