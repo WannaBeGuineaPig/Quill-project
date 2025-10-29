@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed  } from 'vue'
 import { useAppState } from '../composables/useAppState'
 
 const props = defineProps({
@@ -16,6 +16,16 @@ const emit = defineEmits(['editUser', 'view-article'])
 
 
 const userArticlesList = ref([])
+const visibleArticlesCount = ref(10)
+const articlesPerLoad = 10
+
+const visibleArticles = computed(() => {
+  return userArticlesList.value.slice(0, visibleArticlesCount.value)
+})
+
+const hasMoreArticles = computed(() => {
+  return visibleArticlesCount.value < userArticlesList.value.length
+})
 
 const loadArticles = async() => {
   try{
@@ -23,17 +33,19 @@ const loadArticles = async() => {
     const articles = await getArticlesOnUser()
     console.log('Articles loaded:', articles)
     userArticlesList.value = Array.isArray(articles) ? articles : []
-  
   }
   catch(error){
-
-    
+    console.error('Error loading articles:', error)
   }
-
 }
 
-onMounted(async () => {
- 
+const loadMore = () => {
+  if (hasMoreArticles.value) {
+    visibleArticlesCount.value += articlesPerLoad
+  }
+}
+
+onMounted(async () => { 
   await loadArticles()
 })
 // watch(() => props.user, (newUser) => {
@@ -89,26 +101,44 @@ const viewArticle = (articleId) => {
     </div>
     
     <div class="user-articles">
-      <h3 class="card-title">Мои статьи</h3>
-      <div class="articles-grid">
-         <article v-for="article in userArticlesList" 
-        :key="article.id"
-       class="card article-card stack">
+      <h3 class="card-title">Мои статьи ({{ userArticlesList.length }})</h3>
+      <div class="articles-grid grid grid-articles">
+         <article v-for="article in visibleArticles" 
+                  :key="article.id"
+                  class="card article-card stack">
         <!-- Здесь будут статьи пользователя -->
-        <!-- <div class="article-card card"> -->
-          <h3 class="article-title">{{article.title}}</h3>
-          <p class="article-theme">Тематика: {{article.topicName}}</p>
+        <header class="card-header">
+          <h3 class="card-title">{{article.title}}</h3>
+          <span class="pill tag-theme">{{article.topicName}}</span>
+        </header>
+          
           <p class="article-date">Опубликовано: {{  formatDate(article.publishedAt)}}</p>
-          <div class="article-rating">Лайки: {{ article.likes }} · Дизлайки: {{ article.dislikes }}</div>
-          <div class="article-actions">
-            <button class="btn btn-view" @click="viewArticle(article.id)">
-              Просмотр
-            </button>
-          </div> 
-        </article>
-        <!-- </div> -->
-       
+          <div class="row space-between">
+            <div class="article-rating">Лайки: {{ article.likes }} · Дизлайки: {{ article.dislikes }}</div>
+
+            <div class="article-actions">
+              <button class="btn btn-secondary" @click="viewArticle(article.id)">
+                Просмотр
+              </button>
+            </div>
+          </div>           
+        </article>       
       </div>
+
+      <div class="load-more" v-if="hasMoreArticles">
+        <button class="btn btn-outline" @click="loadMore">
+          Загрузить еще
+        </button>
+      </div>
+
+      <div v-else-if="userArticlesList.length > 0" class="no-more-articles">
+        <p>Все статьи загружены</p>
+      </div>
+
+      <div v-else class="no-articles">
+        <p>У вас пока нет статей</p>
+      </div>
+
     </div>
   </section>
 </template>
@@ -141,24 +171,19 @@ const viewArticle = (articleId) => {
   margin-bottom: 1.5rem;
 }
 
-.articles-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.25rem; }
+.articles-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;}
 
 .article-card { padding: 1.5rem; transition: transform 0.25s ease; height: 100%; display:flex; flex-direction:column; }
 .article-card:hover { transform: translateY(-2px); }
 
-.article-title { margin-bottom: 0.5rem; }
+.card-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+.card-header { gap: 20px; }
 
-.article-theme, .article-date { opacity: .8; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.article-date { opacity: .8; font-size: 0.95rem; }
 
-.article-rating {
-  margin: 1rem 0;
-  font-weight: 500;
-}
-
-.article-actions {
-  margin-top: auto;
-  padding-top: 1rem;
-}
+/* Сообщения */
+.no-more-articles,
+.no-articles { text-align: center; padding: 2rem; color: var(--color-text); opacity: 0.7; font-style: italic;}
 
 /* Адаптивность */
 @media (max-width: 768px) {

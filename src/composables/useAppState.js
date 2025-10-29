@@ -8,33 +8,7 @@ const state = reactive({
     { id: 1, email: 'admin@example.com', nickname: 'Admin', role: 'admin', status: 'active' },
     { id: 2, email: 'user@example.com', nickname: 'UserOne', role: 'user', status: 'active' },
   ],
-  articles: [
-    {
-      id: 101,
-      title: 'Введение в веб-разработку',
-      content: 'Текст статьи...'
-        + ' Эта публикация демонстрирует структуру приложения и адаптивную верстку.',
-      theme: 'Технологии',
-      publishedAt: '2024-01-15',
-      status: 'active', // 'active' | 'blocked'
-      authorId: 2,
-      votes: [ { userId: 2, value: 5 } ],
-      comments: [
-        { id: 5001, authorId: 2, text: 'Отличная статья!', publishedAt: '2024-01-16', status: 'active' },
-      ],
-    },
-    {
-      id: 102,
-      title: 'Основы алгоритмов',
-      content: 'Демонстрационная статья о базовых алгоритмах и структурах данных.',
-      theme: 'Наука',
-      publishedAt: '2024-02-03',
-      status: 'active',
-      authorId: 2,
-      votes: [],
-      comments: [],
-    },
-  ],
+  articles: null,
   categories:ref([])
 })
 
@@ -174,6 +148,7 @@ export function useAppState() {
       console.log("error",error)
     }
   }
+  
   const getArticleId = async(id) =>{
      try {
        const result = await getArticleOnId(id) 

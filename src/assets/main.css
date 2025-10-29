@@ -68,9 +68,9 @@ body {
 
 .card:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(2,6,23,0.18); }
 
-.card-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 1rem; }
+.card-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 1rem;}
 .card-title { font-size: 1.5rem; font-weight: 700; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-.card-subtitle { color: var(--color-text); opacity: .75; font-size: .95rem; }
+.card-subtitle { color: var(--color-text); opacity: .75; font-size: .95rem; margin-bottom: 0.5rem;}
 
 /* Buttons */
 .btn {
@@ -94,13 +94,15 @@ body {
 .btn-primary:hover { background: rgba(124,58,237,0.25); transform: none; }
 
 .btn-secondary { color: var(--color-heading); background: rgba(5,223,187,0.25); }
-.btn-secondary:hover {color:  rgba(9, 107, 91); background: rgba(255,255,255,0.8); }
+.btn-secondary:hover {color:  rgba(9, 107, 91); background: rgba(255,255,255,0.8); transform: translateY(-2px);}
 
 .btn-danger { color: var(--color-heading); background: rgba(239,68,68,0.2); box-shadow: none; }
 .btn-danger:hover { background: rgba(239,68,68,0.3); transform: none; }
 
 .btn-ghost { background: transparent; color: #fff;}
 .btn-ghost:hover { background: rgba(255,255,255,0.12); }
+
+.date { font-weight: lighter; font-size: smaller;}
 
 /* Inputs */
 .input {
@@ -114,6 +116,18 @@ body {
 }
 .input::placeholder { color: rgba(255,255,255,0.55); }
 .input:focus { outline: none; border-color: var(--accent-2); box-shadow: 0 0 0 3px rgba(6,182,212,0.35); }
+
+.load-more { display: flex; justify-content: center; margin: 2rem 0;}
+
+.load-more button { color: var(--color-heading); background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.load-more button:hover { background: rgba(124, 58, 237, 0.25); transform: translateY(-2px);}
+
 
 textarea.input { min-height: 120px; resize: vertical; }
 

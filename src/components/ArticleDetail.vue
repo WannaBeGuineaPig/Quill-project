@@ -93,12 +93,17 @@ const formattedComments = computed(() => {
     </div>
     
     <div class="article-header stack">
-      <h2 class="card-title brand-gradient">{{ currentArticle.title }}</h2>
-      <div class="article-meta row">
-        <span class="pill tag-theme">{{ currentArticle.topicName }}</span>
-        <span class="pill">{{ formatDate(currentArticle.publishedAt) }}</span>
-        <span class="pill">Автор: {{ currentArticle.authorName }}</span>
+      <div class="article-meta">
+        <div class="row space-between">
+          <h2 class="card-title brand-gradient">{{ currentArticle.title }}</h2>
+          <span class="pill tag-theme">{{ currentArticle.topicName }}</span>  
+        </div>
+        <div class="date row">
+          <span>Автор: {{ currentArticle.authorName }}</span>
+          <span> {{ formatDate(currentArticle.publishedAt) }}</span>
+        </div>
       </div>
+      
       <div class="article-rating row">
         <span class="pill">Лайков: {{ likesCount }} · Дизлайков: {{ dislikesCount }}</span>
         <div v-if="isLoggedIn" class="rating-controls row">
@@ -107,14 +112,14 @@ const formattedComments = computed(() => {
             :class="{ 'active-rating': isLiked }"
             @click="vote(1)"
           >
-            👍 {{ isLiked ? 'Вам нравится' : 'Нравится' }}
+            ❤️ {{ isLiked ? 'Вам нравится' : 'Нравится' }}
           </button>
           <button 
             class="btn btn-ghost" 
             :class="{ 'active-rating': isDisliked }"
             @click="vote(-1)"
           >
-            👎 {{ isDisliked ? 'Вам не нравится' : 'Не нравится' }}
+            💔 {{ isDisliked ? 'Вам не нравится' : 'Не нравится' }}
           </button>
         </div>
       </div>
@@ -132,7 +137,6 @@ const formattedComments = computed(() => {
           class="input" 
           v-model="commentText" 
           placeholder="Оставьте комментарий..."
-          rows="3"
         ></textarea>
         <button 
           class="btn btn-primary" 
@@ -150,10 +154,11 @@ const formattedComments = computed(() => {
           class="comment glass"
         >
           <div class="comment-header row space-between">
-            <span class="comment-author">{{ comment.authorName || 'Аноним' }}</span>
-            <span class="comment-date">{{ comment.formattedDate }}</span>
+            <span class="comment-author brand-gradient"> {{ comment.authorName || 'Аноним' }}</span>
+            <span class="date">{{ comment.formattedDate }}</span>
           </div>
           <p class="comment-text">{{ comment.content }}</p>
+
           <button 
             v-if="isAdmin || isAuthor" 
             class="btn btn-ghost btn-delete-small" 
@@ -172,11 +177,15 @@ const formattedComments = computed(() => {
 </template>
 
 <style scoped>
+.article-meta { padding: 0 0rem;}
 .article-detail { width: 100%; padding: 1.75rem; border-radius: var(--radius); }
-.article-header { margin-bottom: .5rem; }
-.article-content { margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.9; }
-.comments-section { margin-top: 1rem; }
-.comment { border-radius: 12px; padding: 1rem; position: relative; margin-bottom: 1rem;}
+.article-header { margin-bottom: .5rem; padding: 0 3rem;}
+.article-content { margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.9;  word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap;}
+.comments-section { margin-top: 2rem; padding: 0 5rem;}
+.comment { border-radius: 12px; padding: 1.2rem; position: relative; margin-bottom: 1rem;}
+
+.comment-text { word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; line-height: 1.5; margin-bottom: 0.5rem;}
+
 .btn-delete-small { 
   position: absolute; 
   bottom: .5rem; 
@@ -184,6 +193,8 @@ const formattedComments = computed(() => {
   font-size: 0.8rem; 
   padding: 0.3rem 0.6rem; 
 }
+.date.row { gap: .7rem; }
+
 .input{ padding: 1rem; }
 .rating-controls { gap: .4rem; }
 .no-comments { 
@@ -193,9 +204,8 @@ const formattedComments = computed(() => {
   font-style: italic;
 }
 
-/* Стиль для активной оценки - фиолетовый текст */
 .active-rating {
-  color: #8b5cf6 !important; /* Фиолетовый цвет */
+  color: #8b5cf6 !important;
   border-color: #8b5cf6 !important;
 }
 

@@ -2,7 +2,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useAppState } from '../composables/useAppState'
 
-const { state, loadArticlesList, formatDate, getTopics, getUserArticleRating } = useAppState() // ← добавить getUserArticleRating
+const { state, loadArticlesList, formatDate, getTopics, getUserArticleRating } = useAppState()
 
 const props = defineProps({
   isLoggedIn: {
@@ -19,8 +19,8 @@ const selectedSort = ref('newest')
 const showSortDropdown = ref(false)
 const visibleArticlesCount = ref(20)
 const articlesPerLoad = 10
+const loading = ref(false)
 
-// Добавляем реактивный объект для хранения рейтингов пользователя
 const userRatings = ref({})
 
 const sortOptions = [
@@ -60,7 +60,6 @@ const loadUserRatings = async () => {
   }
 }
 
-// Вычисляемое свойство для определения жирного текста
 const getRatingClass = (articleId, ratingType) => {
   const userRating = userRatings.value[articleId]
   if (ratingType === 'likes' && userRating === 1) {
@@ -73,11 +72,10 @@ const getRatingClass = (articleId, ratingType) => {
 }
 
 const setCategory = (cat) => {
-  const categoriesValue = categories.value
-  selectedCategory.value = categoriesValue.findIndex(c => c === cat)
+  selectedCategory.value = cat
   const data = {
     search: searchQuery.value,
-    category: selectedCategory.value,
+    category: cat === "Все" ? -1 : categories.value.indexOf(cat) - 1,
     sortBy: selectedSort.value,
   }
   loadArticlesList(data)
@@ -138,14 +136,18 @@ onMounted(async () => {
     sortBy: undefined,
   }
 
-  await getTopics()
-  console.log("mounted state categories", state.categories)
-  await loadArticlesList(data)
-  
-  // Загружаем рейтинги пользователя после загрузки статей
-  await loadUserRatings()
-  
-  console.log("mounted", data)
+  loading.value = true
+  try {
+    await getTopics()
+    console.log("mounted state categories", state.categories)
+    await loadArticlesList(data)
+    
+    await loadUserRatings()
+    
+    console.log("mounted", data)
+  } finally {
+    loading.value = false
+  }
 })
 
 const loadMore = () => {
@@ -155,7 +157,7 @@ const loadMore = () => {
 }
 </script>
 
-<template>
+<template>   
   <section class="articles-section stack">
     <div class="section-header glass row space-between">
       <h2 class="section-title brand-gradient">Все статьи</h2>
@@ -207,7 +209,7 @@ const loadMore = () => {
         :class="{ active: selectedCategory === cat }"
         @click="setCategory(cat)"
       >{{ cat }}</button>
-    </div>
+    </div>    
 
     <div class="articles-grid grid grid-articles">
       <!-- Article Card (sample) -->
@@ -218,25 +220,33 @@ const loadMore = () => {
           <h3 class="card-title">{{article.title}}</h3>
           <span class="pill tag-theme">{{article.topicName}}</span>
         </header>
-        <div class="card-subtitle">Опубликовано: {{formatDate(article.publishedAt)}} · Автор: {{article.authorName}}</div>
-        <div class="row space-between">
-          <div class="pill">
-            <span :class="getRatingClass(article.id, 'likes')">👍: {{ article.likes }}</span> 
-            · 
-            <span :class="getRatingClass(article.id, 'dislikes')">👎: {{article.dislikes}}</span>
+
+        <footer class="card-footer">
+          <div class="card-subtitle">Опубликовано: {{formatDate(article.publishedAt)}} · Автор: {{article.authorName}}</div>
+          <div class="row space-between">
+            <div class="rating row ">
+              <div class="pill">
+                <span :class="getRatingClass(article.id, 'likes')">❤️ {{ article.likes }} </span> 
+              </div>
+              <div class="pill">
+                <span :class="getRatingClass(article.id, 'dislikes')">💔 {{article.dislikes}}</span>
+              </div>
+            </div>
+            <div class="article-actions">
+              <button class="btn btn-secondary" @click="viewArticle(article.id)">Просмотр</button>
+            </div>
           </div>
-          <div class="article-actions">
-            <button class="btn btn-secondary" @click="viewArticle(article.id)">Просмотр</button>
-          </div>
-        </div>
+        </footer>
       </article>
-     
-      <!-- Здесь будут другие карточки статей -->
+    </div>
+
+    <div v-if="loading" class="loading">
+      Загрузка статей...
     </div>
 
     <div class="load-more" v-if="hasMoreArticles">
       <button class="btn btn-outline" @click="loadMore">
-        Загрузить еще 
+        Загрузить еще
       </button>
     </div>
   </section>
@@ -252,6 +262,11 @@ const loadMore = () => {
 .custom-select-wrapper {
   position: relative;
   min-width: 170px;
+}
+.card-footer {
+  /* Футер прижимается к низу */
+  
+  margin-top: auto;
 }
 
 .custom-select-toggle {
@@ -277,6 +292,7 @@ const loadMore = () => {
   outline: none;
   box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
 }
+.rating { gap: 0.3rem}
 
 .dropdown-arrow {
   font-size: 0.7em;
@@ -300,6 +316,14 @@ const loadMore = () => {
   z-index: 1000;
   overflow: hidden;
   animation: dropdownAppear 0.2s ease;
+}
+
+.category-pill.active { 
+  background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(6,182,212,0.3)); 
+  border-color: var(--accent-1); 
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+  transform: translateY(-1px);
 }
 
 @keyframes dropdownAppear {
@@ -341,31 +365,23 @@ const loadMore = () => {
   flex: 1;
 }
 
-.load-more{
-  display: flex;
-  justify-content: center;
-}
-.load-more button{
-  color: var(--color-heading);
-  background: rgba(124,58,237,0.15);
-}
-
-/* Стиль для жирного текста рейтинга */
 .bold-rating {
   font-weight: bold;
   color: #bdf6ffff;
 }
+
+.loading { text-align: center; padding: 2rem; color: var(--color-text); opacity: 0.7; font-style: italic;}
+
 
 /* Увеличиваем карточки и сетку */
 .articles-grid.grid-articles { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); }
 .article-card { padding: 1.75rem; gap: 1rem; }
 .card-title { font-size: 1.75rem; }
 
-/* Пиллы категорий */
+
 .category-pill { background: var(--surface); cursor: pointer; color: white !important;}
 .category-pill.active { background: linear-gradient(135deg, rgba(124,58,237,0.18), rgba(6,182,212,0.18)); border-color: var(--accent-2); color: white !important;}
 
-/* Позволяем перенос строк */
 .row.wrap { flex-wrap: wrap; }
 
 @media (max-width: 768px) {
