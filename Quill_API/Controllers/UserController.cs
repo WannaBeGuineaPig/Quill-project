@@ -13,7 +13,7 @@ namespace Quill_API.Controllers
         [HttpGet]
         public List<User> GetAllUser()
         {
-            return QuillBdContext.Context.Users.ToList();
+            return DbArticlesContext.Context.Users.ToList();
         }
 
         [HttpPost("AuthorizationUser")]
@@ -23,9 +23,9 @@ namespace Quill_API.Controllers
                 return BadRequest("Не корректная почта!");
             if (!HelpFunc.CheckCorrectlyPassword(authorizationClass.password)) 
                 return BadRequest("Не корректный пароль!");
-            if (!HelpFunc.CheckExitMail(QuillBdContext.Context.Users, authorizationClass.email)) 
+            if (!HelpFunc.CheckExitMail(DbArticlesContext.Context.Users, authorizationClass.email)) 
                 return BadRequest("Не правильна введена почта или пароль!");
-            User? user = HelpFunc.GetUserOnMail(QuillBdContext.Context.Users, authorizationClass.email);
+            User? user = HelpFunc.GetUserOnMail(DbArticlesContext.Context.Users, authorizationClass.email);
             if (!HelpFunc.CheckMatchHesh(authorizationClass.password, user!.Password)) 
                 return BadRequest("Не правильна введена почта или пароль!");
             return Ok(user);
@@ -37,7 +37,7 @@ namespace Quill_API.Controllers
             if (!HelpFunc.CheckCorrectlyMailAddress(user.Email)) 
                 return BadRequest("Введена некорректная почта!");
             
-            if (HelpFunc.CheckExitMail(QuillBdContext.Context.Users, user.Email)) 
+            if (HelpFunc.CheckExitMail(DbArticlesContext.Context.Users, user.Email)) 
                 return BadRequest("Пользователь с такой почтой уже существует!");
             
             if (!HelpFunc.CheckCorrectlyPassword(user.Password)) 
@@ -46,14 +46,14 @@ namespace Quill_API.Controllers
             if (!HelpFunc.CheckCorrectlyNickName(user.Nickname)) 
                 return BadRequest("Не корректный логин!");
 
-            if (!HelpFunc.CheckUniqueNickname(QuillBdContext.Context.Users, user.Nickname)) 
+            if (!HelpFunc.CheckUniqueNickname(DbArticlesContext.Context.Users, user.Nickname)) 
                 return BadRequest("Данный логин уже существует!");
 
             user.Password = HelpFunc.CreateHeshPassword(user.Password);
             user.Role = "user";
             user.Status = "active";
-            QuillBdContext.Context.Users.Add(user);
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.Users.Add(user);
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Успешная регистрация!");
         }
 
@@ -61,14 +61,14 @@ namespace Quill_API.Controllers
         public ActionResult ChangeUserInfo(User user)
         {
 
-            var changedUser = QuillBdContext.Context.Users.FirstOrDefault(u => u.Id == user.Id);
+            var changedUser = DbArticlesContext.Context.Users.FirstOrDefault(u => u.Id == user.Id);
             if (changedUser == null)
             {
                 return BadRequest("Пользователь не найден");
             }
             if (!HelpFunc.CheckCorrectlyMailAddress(user.Email))
                 return BadRequest("Не корректная почта!");
-            var u = QuillBdContext.Context.Users.Where(c => c.Email == user.Email).FirstOrDefault();
+            var u = DbArticlesContext.Context.Users.Where(c => c.Email == user.Email).FirstOrDefault();
             if (u is User && user.Id != u.Id)
                 return BadRequest("Пользователь с такой почтой уже существует!");
 
@@ -77,20 +77,20 @@ namespace Quill_API.Controllers
 
             if (!HelpFunc.CheckCorrectlyNickName(user.Nickname))
                 return BadRequest("Не корректный логин!");
-            var n = QuillBdContext.Context.Users.Where(c => c.Nickname == user.Nickname).FirstOrDefault();
+            var n = DbArticlesContext.Context.Users.Where(c => c.Nickname == user.Nickname).FirstOrDefault();
             if (n is User && n.Id != user.Id)
                 return BadRequest("Данный логин уже существует!");
 
             changedUser.Email = user.Email;
             changedUser.Nickname = user.Nickname;
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok(changedUser);
         }
 
         [HttpPut("ChangeStatusUser")]
         public ActionResult ChangeStatusUser(StatusUserClass statusUserClass)
         {
-            User? user = QuillBdContext.Context.Users.Where(obj => obj.Id == statusUserClass.Id).FirstOrDefault();
+            User? user = DbArticlesContext.Context.Users.Where(obj => obj.Id == statusUserClass.Id).FirstOrDefault();
             if (user == null)
             {
                 return BadRequest("Пользователь не найден!");
@@ -106,7 +106,7 @@ namespace Quill_API.Controllers
                 return BadRequest("Статус пользователя не найден!");
 
             user.Status = statusUserClass.Status;
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Статус пользователя успешно изменён!");
         }
     }

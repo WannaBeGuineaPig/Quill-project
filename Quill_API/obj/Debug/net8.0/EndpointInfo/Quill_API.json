@@ -232,24 +232,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Article"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Article"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Article"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -365,7 +348,33 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comment"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comment"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comment"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -478,16 +487,23 @@
         }
       }
     },
-    "/api/Rating/GetRatingUser/{idUser}": {
+    "/api/Rating/GetUserArticleRating": {
       "get": {
         "tags": [
           "Rating"
         ],
         "parameters": [
           {
-            "name": "idUser",
-            "in": "path",
-            "required": true,
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "articleId",
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -687,7 +703,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
           }
         }
       }
@@ -820,25 +853,16 @@
             "type": "integer",
             "format": "int32"
           },
+          "image": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
           "author": {
             "$ref": "#/components/schemas/User"
           },
-          "comments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Comment"
-            },
-            "nullable": true
-          },
           "idTopicsNavigation": {
             "$ref": "#/components/schemas/Topic"
-          },
-          "ratings": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Rating"
-            },
-            "nullable": true
           },
           "likesAmount": {
             "type": "integer",
@@ -884,6 +908,10 @@
           "idTopics": {
             "type": "integer",
             "format": "int32"
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -966,34 +994,6 @@
           "authorId": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Rating": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "articleId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "rating1": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "article": {
-            "$ref": "#/components/schemas/Article"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
           }
         },
         "additionalProperties": false
@@ -1108,27 +1108,6 @@
           },
           "status": {
             "type": "string",
-            "nullable": true
-          },
-          "articles": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Article"
-            },
-            "nullable": true
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Comment"
-            },
-            "nullable": true
-          },
-          "ratings": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Rating"
-            },
             "nullable": true
           }
         },

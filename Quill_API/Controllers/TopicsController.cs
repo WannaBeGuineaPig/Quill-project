@@ -12,14 +12,14 @@ namespace Quill_API.Controllers
         [HttpGet("GetTopics")]
         public ActionResult<List<Topic>> GetTopics()
         {
-            var categories = QuillBdContext.Context.Topics.Select(x => new{Id = x.IdTopics, TopicName = x.NameTopics }).ToList();
+            var categories = DbArticlesContext.Context.Topics.Select(x => new{Id = x.IdTopics, TopicName = x.NameTopics }).ToList();
             return Ok(categories);
         }
 
         [HttpGet("GetTopicsOnName/{nameTopic}")]
         public ActionResult GetTopicsOnName(string nameTopic)
         {
-            Topic? topic = QuillBdContext.Context.Topics.Where(obj => obj.NameTopics == nameTopic).FirstOrDefault();
+            Topic? topic = DbArticlesContext.Context.Topics.Where(obj => obj.NameTopics == nameTopic).FirstOrDefault();
             return topic == null ? NotFound("Категория не найдена!") : Ok(topic);
         }
     }

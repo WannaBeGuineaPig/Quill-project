@@ -14,28 +14,28 @@ namespace Quill_API.Controllers
         [HttpGet("GetLikeRatingsArticle/{idArticle}")]
         public ActionResult GetLikeRatingsArticle(int idArticle)
         {
-            if (QuillBdContext.Context.Articles.Where(obj => obj.Id == idArticle).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Articles.Where(obj => obj.Id == idArticle).FirstOrDefault() == null)
                 return NotFound("Статья не найдена!");
 
-            return Ok(QuillBdContext.Context.Ratings.Where(obj => obj.ArticleId == idArticle && obj.Rating1 == 1).ToList().Count());
+            return Ok(DbArticlesContext.Context.Ratings.Where(obj => obj.ArticleId == idArticle && obj.Rating1 == 1).ToList().Count());
         }
         
         [HttpGet("GetDislikeRatingsArticle/{idArticle}")]
         public ActionResult GetSilikeRatingsArticle(int idArticle)
         {
-            if (QuillBdContext.Context.Articles.Where(obj => obj.Id == idArticle).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Articles.Where(obj => obj.Id == idArticle).FirstOrDefault() == null)
                 return NotFound("Статья не найдена!");
 
-            return Ok(QuillBdContext.Context.Ratings.Where(obj => obj.ArticleId == idArticle && obj.Rating1 == -1).ToList().Count());
+            return Ok(DbArticlesContext.Context.Ratings.Where(obj => obj.ArticleId == idArticle && obj.Rating1 == -1).ToList().Count());
         }
 
         [HttpGet("GetUserArticleRating")]
         public ActionResult GetUserArticleRating(int userId, int articleId)
         {
-            if (QuillBdContext.Context.Users.Where(obj => obj.Id == userId).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Users.Where(obj => obj.Id == userId).FirstOrDefault() == null)
                 return NotFound("Пользователь не найден!");
 
-            var rating = QuillBdContext.Context.Ratings
+            var rating = DbArticlesContext.Context.Ratings
                 .Where(obj => obj.UserId == userId && obj.ArticleId == articleId)
                 .FirstOrDefault();
 
@@ -46,10 +46,10 @@ namespace Quill_API.Controllers
         [HttpPost("SetRatingUser")]
         public ActionResult SetRatingUser(RatingClass ratingClass)
         {
-            if (!HelpFunc.CheckCorrectlyIdUser(QuillBdContext.Context.Users, ratingClass.UserId))
+            if (!HelpFunc.CheckCorrectlyIdUser(DbArticlesContext.Context.Users, ratingClass.UserId))
                 return NotFound("Пользователь не найден!");
 
-            if (QuillBdContext.Context.Articles.Where(obj => obj.Id == ratingClass.ArticleId).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Articles.Where(obj => obj.Id == ratingClass.ArticleId).FirstOrDefault() == null)
                 return NotFound("Статья не найдена!");
 
             //List<string> ratings = new List<string>()
@@ -61,7 +61,7 @@ namespace Quill_API.Controllers
             //if (!ratings.Contains(ratingClass.Rating1))
             //    return NotFound("Рейтинг не найден!");
 
-            Rating? rating = QuillBdContext.Context.Ratings.Where(obj => obj.ArticleId == ratingClass.ArticleId && obj.UserId == ratingClass.UserId).FirstOrDefault();
+            Rating? rating = DbArticlesContext.Context.Ratings.Where(obj => obj.ArticleId == ratingClass.ArticleId && obj.UserId == ratingClass.UserId).FirstOrDefault();
 
             if (rating != null)
             {
@@ -69,27 +69,27 @@ namespace Quill_API.Controllers
             }
             else
             {
-                QuillBdContext.Context.Ratings.Add(new Rating{
+                DbArticlesContext.Context.Ratings.Add(new Rating{
                     ArticleId = ratingClass.ArticleId,
                     UserId = ratingClass.UserId,
                     Rating1 = ratingClass.Rating1
                 });
             }
 
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Рейтинг добавлен!");
         }
 
         [HttpDelete("DeleteRating")]
         public ActionResult DeleteRating(RatingClass ratingClass)
         {
-            Rating? rating = QuillBdContext.Context.Ratings.Where(obj => obj.ArticleId == ratingClass.ArticleId && obj.UserId == ratingClass.UserId).FirstOrDefault();
+            Rating? rating = DbArticlesContext.Context.Ratings.Where(obj => obj.ArticleId == ratingClass.ArticleId && obj.UserId == ratingClass.UserId).FirstOrDefault();
 
             if (rating == null)
                 return NotFound("Рейтинг не найден!");
 
-            QuillBdContext.Context.Ratings.Remove(rating!);
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.Ratings.Remove(rating!);
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Рейтинг удалён!");
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Quill_API.Model;
 
@@ -19,14 +20,17 @@ public partial class Article
 
     public int IdTopics { get; set; }
 
-    public virtual User Author { get; set; } = null!;
+    public byte[]? Image { get; set; }
 
+    public virtual User Author { get; set; } = null!;
+    
+    [JsonIgnore]
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
     public virtual Topic IdTopicsNavigation { get; set; } = null!;
 
+    [JsonIgnore]
     public virtual ICollection<Rating> Ratings { get; set; } = new List<Rating>();
-
     public int LikesAmount => Ratings.Count() != 0 ? Ratings.Count(x => x.Rating1 == 1) : 0;
 
     public int DislikesAmount => Ratings.Count() != 0 ? Ratings.Count(x => x.Rating1 == -1) : 0;

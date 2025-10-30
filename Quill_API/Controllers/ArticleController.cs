@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Quill_API.Model;
 using Quill_API.SupportClass;
+using System.Buffers.Text;
+using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -16,13 +18,13 @@ namespace Quill_API.Controllers
 
         [HttpGet("GetFilteredArticles")]
         public ActionResult GetFilteredArticles(
-   [FromQuery] string search = null,
-    int category = -1,
-    string sortBy = "newest")
+                           [FromQuery] string search = null,
+                            int category = -1,
+                            string sortBy = "newest")
         {
             try
             {
-                var query = QuillBdContext.Context.Articles.Include(x => x.Author)
+                var query = DbArticlesContext.Context.Articles.Include(x => x.Author)
                     .Include(x => x.Comments)
                     .Include(x => x.IdTopicsNavigation)
                     .Include(x => x.Ratings)
@@ -71,6 +73,7 @@ namespace Quill_API.Controllers
                        TopicName = x.IdTopicsNavigation.NameTopics,
                        PublishedAt = x.PublishedAt,
                        AuthorName = x.Author.Nickname,
+                       Image = x.Image,
                        Likes = x.LikesAmount.ToString(),
                        Dislikes = x.DislikesAmount.ToString(),
                        CommentsCount = x.Comments.Count(c => c.Status == "active")
@@ -90,7 +93,7 @@ namespace Quill_API.Controllers
         {
             try
             {
-                var query = QuillBdContext.Context.Articles.Include(x => x.Author)
+                var query = DbArticlesContext.Context.Articles.Include(x => x.Author)
                          .Include(x => x.Comments)
                          .Include(x => x.IdTopicsNavigation)
                          .Include(x => x.Ratings)
@@ -105,6 +108,7 @@ namespace Quill_API.Controllers
                           TopicName = x.IdTopicsNavigation.NameTopics,
                           PublishedAt = x.PublishedAt,
                           AuthorName = x.Author.Nickname,
+                          Image = x.Image,
                           Likes = x.LikesAmount.ToString(),
                           Dislikes = x.DislikesAmount.ToString(),
                           CommentsCount = x.Comments.Count(c => c.Status == "active")
@@ -122,20 +126,20 @@ namespace Quill_API.Controllers
         [HttpGet("GetLastetsNews")]
         public List<Article> GetLastetsNews()
         {
-            return QuillBdContext.Context.Articles.Where(x => x.Status=="active").OrderBy(obj => obj.PublishedAt).ToList();
+            return DbArticlesContext.Context.Articles.ToList();
         }
 
         [HttpGet("GetOldNews")]
         public List<Article> GetOldNews()
         {
-            return QuillBdContext.Context.Articles.OrderByDescending(obj => obj.PublishedAt).ToList();
+            return DbArticlesContext.Context.Articles.OrderByDescending(obj => obj.PublishedAt).ToList();
         }
 
 
         [HttpGet("GetNewsOnTitle/{titleInput}")]
         public List<Article> GetOldNews(string titleInput)
         {
-            return QuillBdContext.Context.Articles.Where(obj => Regex.IsMatch(obj.Title, titleInput)).ToList();
+            return DbArticlesContext.Context.Articles.Where(obj => Regex.IsMatch(obj.Title, titleInput)).ToList();
         }
 
         [HttpGet("GetArticleOnId")]
@@ -143,7 +147,7 @@ namespace Quill_API.Controllers
         {
             try
             {
-                var article = QuillBdContext.Context.Articles
+                var article = DbArticlesContext.Context.Articles
                     .Where(x => x.Id == id && x.Status == "active")
                     .Select(x => new
                     {
@@ -154,6 +158,7 @@ namespace Quill_API.Controllers
                         PublishedAt = x.PublishedAt,
                         AuthorName = x.Author.Nickname,
                         AuthorId = x.Author.Id,
+                        Image = x.Image,
                         Likes = x.LikesAmount,
                         Dislikes = x.DislikesAmount
                     })
@@ -175,17 +180,21 @@ namespace Quill_API.Controllers
         [HttpPost("AddNewArticle")]
         public ActionResult AddNewArticle(ArticleClass article) 
         {
-
-            if (!HelpFunc.CheckCorrectlyNickName(article.Title))
-                return BadRequest("Не корректное название статьи!");
-
-            if (!HelpFunc.CheckCorrectlyIdUser(QuillBdContext.Context.Users, article.AuthorId))
+            if (article.Title.Trim().Length == 0)
+            {
+                return BadRequest("Введите название");
+            }
+            if (article.Content.Trim().Length == 0)
+            {
+                return BadRequest("Введите содержание");
+            }
+            if (!HelpFunc.CheckCorrectlyIdUser(DbArticlesContext.Context.Users, article.AuthorId))
                 return NotFound("Пользователь не найден!");
 
-            if (!HelpFunc.CheckUniqueTitle(QuillBdContext.Context.Articles, article.Title, article.AuthorId))
+            if (!HelpFunc.CheckUniqueTitle(DbArticlesContext.Context.Articles, article.Title, article.AuthorId))
                 return BadRequest("Данный пользователь уже выкладывал статью с таким заголовком!");
 
-            if (!HelpFunc.CheckCorrectlyIdTopic(QuillBdContext.Context.Topics, article.IdTopics))
+            if (!HelpFunc.CheckCorrectlyIdTopic(DbArticlesContext.Context.Topics, article.IdTopics))
                 return NotFound("Категория не найдена!");
 
             Article newArticle = new Article()
@@ -198,40 +207,73 @@ namespace Quill_API.Controllers
                 IdTopics = article.IdTopics,
             };
 
-            QuillBdContext.Context.Articles.Add(newArticle);
-            QuillBdContext.Context.SaveChanges();
+
+
+            if (article.Image is not null)
+            {
+                try
+                {
+                    newArticle.Image = Convert.FromBase64String(article.Image);
+                }
+                catch (System.FormatException ex) 
+                {
+                    return BadRequest("Не корректный формат изображения!");
+                }
+            }
+
+            DbArticlesContext.Context.Articles.Add(newArticle);
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Статья добавлена!");
         }
 
         [HttpPut("ChangeArticle")]
         public ActionResult ChangeArticle(ArticleClass article) 
         {
-            Article? article1 = QuillBdContext.Context.Articles.Where(obj => obj.Id == article.Id).FirstOrDefault();
+            Article? article1 = DbArticlesContext.Context.Articles.Where(obj => obj.Id == article.Id).FirstOrDefault();
 
             if (article1 == null)
                 return NotFound("Статья не найдена!");
 
-            if (!HelpFunc.CheckCorrectlyNickName(article.Title))
-                return BadRequest("Не корректное название статьи!");
-
-            if (!HelpFunc.CheckUniqueTitle(QuillBdContext.Context.Articles, article.Title, article.AuthorId))
+            if (article.Title.Trim().Length == 0)
+            {
+                return BadRequest("Введите название");
+            }
+            if (article.Content.Trim().Length == 0)
+            {
+                return BadRequest("Введите содержание");
+            }
+            if (DbArticlesContext.Context.Articles.Any(x => x.Id != article.Id && x.AuthorId == x.AuthorId && x.Title == article.Title && x.Status == "active"))
+            {
                 return BadRequest("Данный пользователь уже выкладывал статью с таким заголовком!");
+            }
 
-            if (!HelpFunc.CheckCorrectlyIdTopic(QuillBdContext.Context.Topics, article.IdTopics))
+            if (!HelpFunc.CheckCorrectlyIdTopic(DbArticlesContext.Context.Topics, article.IdTopics))
                 return NotFound("Категория не найдена!");
 
             article1.Title = article.Title;
             article1.Content = article.Content;
             article1.IdTopics = article.IdTopics;
 
-            QuillBdContext.Context.SaveChanges();
+            if (article.Image is not null)
+            {
+                try
+                {
+                    article1.Image = Convert.FromBase64String(article.Image);
+                }
+                catch (System.FormatException ex)
+                {
+                    return BadRequest("Не корректный формат изображения!");
+                }
+            }
+
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Данные статьи обновлны!");
         }
 
         [HttpPut("ChangeStatusArticle")]
         public ActionResult ChangeStatusArticle(StatusArticleClass statusArticleClass)
         {
-            Article? article = QuillBdContext.Context.Articles.Where(obj => obj.Id == statusArticleClass.Id).FirstOrDefault();
+            Article? article = DbArticlesContext.Context.Articles.Where(obj => obj.Id == statusArticleClass.Id).FirstOrDefault();
 
             if (article == null)
                 return NotFound("Статья не найдена!");
@@ -246,7 +288,7 @@ namespace Quill_API.Controllers
                 return NotFound("Статус статьи не найден!");
 
             article.Status = statusArticleClass.Status;
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Статус статьи успешно изменён!");
         }
        

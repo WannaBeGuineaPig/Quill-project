@@ -5,24 +5,23 @@ using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
 namespace Quill_API.Model;
 
-public partial class QuillBdContext : DbContext
+public partial class DbArticlesContext : DbContext
 {
-
-    public static QuillBdContext _context;
-    public static QuillBdContext Context
+    public static DbArticlesContext _context;
+    public static DbArticlesContext Context
     {
         get
         {
             if (_context == null)
-                _context = new QuillBdContext();
+                _context = new DbArticlesContext();
             return _context;
         }
     }
-    public QuillBdContext()
+    public DbArticlesContext()
     {
     }
 
-    public QuillBdContext(DbContextOptions<QuillBdContext> options)
+    public DbArticlesContext(DbContextOptions<DbArticlesContext> options)
         : base(options)
     {
     }
@@ -39,7 +38,7 @@ public partial class QuillBdContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;user=root;password=1234;database=db_articles", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
+        => optionsBuilder.UseMySql("server=localhost;user=root;password=1234;database=db_articles", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.39-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -63,6 +62,9 @@ public partial class QuillBdContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("content");
             entity.Property(e => e.IdTopics).HasColumnName("id_topics");
+            entity.Property(e => e.Image)
+                .HasColumnType("mediumblob")
+                .HasColumnName("image");
             entity.Property(e => e.PublishedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp")

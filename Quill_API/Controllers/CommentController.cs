@@ -16,7 +16,7 @@ namespace Quill_API.Controllers
         {
             try
             {
-                var query = QuillBdContext.Context.Comments.Include(x => x.Author)
+                var query = DbArticlesContext.Context.Comments.Include(x => x.Author)
                          .Where(o => o.ArticleId == idArticle && o.Status == "published").AsQueryable();
                 var comments = query
                     .Select(x => new
@@ -40,13 +40,13 @@ namespace Quill_API.Controllers
         [HttpPost("AddNewComment")]
         public ActionResult AddNewComment(CommentClass commentClass)
         {
-            if (QuillBdContext.Context.Articles.Where(obj => obj.Id == commentClass.ArticleId).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Articles.Where(obj => obj.Id == commentClass.ArticleId).FirstOrDefault() == null)
                 return NotFound("Статья не найдена!");
 
-            if (QuillBdContext.Context.Users.Where(obj => obj.Id == commentClass.AuthorId).FirstOrDefault() == null)
+            if (DbArticlesContext.Context.Users.Where(obj => obj.Id == commentClass.AuthorId).FirstOrDefault() == null)
                 return NotFound("Пользователь не найден!");
 
-            QuillBdContext.Context.Comments.Add(new Comment()
+            DbArticlesContext.Context.Comments.Add(new Comment()
             {
                 Content = commentClass.Content,
                 PublishedAt = DateTime.Now,
@@ -54,14 +54,14 @@ namespace Quill_API.Controllers
                 ArticleId = commentClass.ArticleId,
                 AuthorId = commentClass.AuthorId,
             });
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Комментарий добавлен!");
         }
 
         [HttpPut("ChangeStatusComment")]
         public ActionResult ChangeStatusComment(StatusCommentClass statusCommentClass)
         {
-            Comment? comment = QuillBdContext.Context.Comments.Where(obj => obj.Id == statusCommentClass.Id).FirstOrDefault();
+            Comment? comment = DbArticlesContext.Context.Comments.Where(obj => obj.Id == statusCommentClass.Id).FirstOrDefault();
             if (comment == null)
                 return NotFound("Комментарий не найден!");
 
@@ -76,7 +76,7 @@ namespace Quill_API.Controllers
 
             comment.Status = statusCommentClass.Status;
 
-            QuillBdContext.Context.SaveChanges();
+            DbArticlesContext.Context.SaveChanges();
             return Ok("Статус комментария изменён!");
         }
     }
