@@ -130,7 +130,10 @@ body {
 }
 .input::placeholder { color: rgba(255,255,255,0.55); }
 .input:focus { outline: none; border-color: rgba(255,255,255,0.25); box-shadow: 0 0 5px 5px rgba(48, 129, 173, 0.2) }
-
+.input[type="password"] {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
 
 
 .load-more { display: flex; justify-content: center; margin-top: 3rem;}
