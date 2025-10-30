@@ -57,6 +57,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
+=======
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Program.cs",
+              "RelativeDocumentMoniker": "Quill_API\\Program.cs",
+              "ToolTip": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Program.cs",
+              "RelativeToolTip": "Quill_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T21:20:41.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Model\\Rating.cs",
+              "RelativeDocumentMoniker": "Quill_API\\Model\\Rating.cs",
+              "ToolTip": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Model\\Rating.cs",
+              "RelativeToolTip": "Quill_API\\Model\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T17:36:14.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Model\\Article.cs",
+              "RelativeDocumentMoniker": "Quill_API\\Model\\Article.cs",
+              "ToolTip": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Model\\Article.cs",
+              "RelativeToolTip": "Quill_API\\Model\\Article.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T17:28:26.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "Quill_API\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\noutb\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "Quill_API\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T16:04:44.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+>>>>>>> 581b1af178b0fe1ca907ff557691e6672e2b1bc6
               "Title": "ArticleController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\Quill_API\\Controllers\\ArticleController.cs",
               "RelativeDocumentMoniker": "Quill_API\\Controllers\\ArticleController.cs",

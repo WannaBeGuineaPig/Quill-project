@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\Telegram Desktop\\Quill_API\\Quill_API\\",
   "Documents": [
     {
@@ -15,6 +16,10 @@
       "RelativeMoniker": "D:0:0:{78617B90-0031-4974-886A-5D628E32276B}|Quill_API\\Quill_API.csproj|solutionrelative:quill_api\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Quill-project\\",
+  "Documents": [],
+>>>>>>> 581b1af178b0fe1ca907ff557691e6672e2b1bc6
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,11 +27,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> 581b1af178b0fe1ca907ff557691e6672e2b1bc6
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -66,6 +76,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T10:26:56.546Z",
               "EditorCaption": ""
+=======
+>>>>>>> 581b1af178b0fe1ca907ff557691e6672e2b1bc6
             }
           ]
         }

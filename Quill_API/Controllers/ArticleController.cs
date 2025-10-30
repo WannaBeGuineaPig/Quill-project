@@ -5,7 +5,6 @@ using Quill_API.SupportClass;
 using System.Buffers.Text;
 using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -207,15 +206,13 @@ namespace Quill_API.Controllers
                 IdTopics = article.IdTopics,
             };
 
-
-
             if (article.Image is not null)
             {
                 try
                 {
                     newArticle.Image = Convert.FromBase64String(article.Image);
                 }
-                catch (System.FormatException ex) 
+                catch (System.FormatException ex)
                 {
                     return BadRequest("Не корректный формат изображения!");
                 }
