@@ -75,7 +75,7 @@ const setCategory = (cat) => {
   selectedCategory.value = cat
   const data = {
     search: searchQuery.value,
-    category: cat === "Все" ? -1 : categories.value.indexOf(cat) - 1,
+    category: cat === "Все" ? -1 : categories.value.indexOf(cat),
     sortBy: selectedSort.value,
   }
   loadArticlesList(data)
@@ -114,6 +114,7 @@ const viewArticle = (articleId) => {
 }
 
 const addArticle = () => {
+  
   emit('add-article')
 }
 
@@ -261,37 +262,12 @@ const loadMore = () => {
 
 .custom-select-wrapper {
   position: relative;
-  min-width: 170px;
+  min-width: 160px;
 }
-.card-footer {
-  /* Футер прижимается к низу */
-  
+.card-footer {  
   margin-top: auto;
 }
 
-.custom-select-toggle {
-  width: 100%;
-  background: var(--surface);
-  border: 1px solid var(--accent-2);
-  border-radius: 999px;
-  padding: 0.6rem 0.8rem;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.custom-select-toggle:hover {
-  border-color: var(--accent-1);
-  background: rgba(124, 58, 237, 0.1);
-}
-
-.custom-select-toggle:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
-}
 .rating { gap: 0.3rem}
 
 .dropdown-arrow {
@@ -303,67 +279,7 @@ const loadMore = () => {
   transform: translateY(1px);
 }
 
-.custom-select-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: var(--surface);
-  border: 1px solid var(--accent-2);
-  border-radius: 12px;
-  margin-top: 8px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  z-index: 1000;
-  overflow: hidden;
-  animation: dropdownAppear 0.2s ease;
-}
 
-.category-pill.active { 
-  background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(6,182,212,0.3)); 
-  border-color: var(--accent-1); 
-  color: white !important;
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-  transform: translateY(-1px);
-}
-
-@keyframes dropdownAppear {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.dropdown-option {
-  padding: 12px 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: all 0.2s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: var(--surface);
-}
-
-.dropdown-option:last-child {
-  border-bottom: none;
-}
-
-.dropdown-option:hover {
-  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(6,182,212,0.2));
-}
-
-.dropdown-option.active {
-  background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(6,182,212,0.3));
-}
-
-.option-label {
-  font-size: 14px;
-  color: white;
-  flex: 1;
-}
 
 .bold-rating {
   font-weight: bold;
@@ -380,7 +296,7 @@ const loadMore = () => {
 
 
 .category-pill { background: var(--surface); cursor: pointer; color: white !important;}
-.category-pill.active { background: linear-gradient(135deg, rgba(124,58,237,0.18), rgba(6,182,212,0.18)); border-color: var(--accent-2); color: white !important;}
+.category-pill.active { background: linear-gradient(135deg, rgba(124,58,237,0.18), rgba(6,182,212,0.18)); border-color: var(--accent-2); box-shadow: 0 0 5px 3px rgba(48, 129, 173, 0.2); color: white !important; }
 
 .row.wrap { flex-wrap: wrap; }
 

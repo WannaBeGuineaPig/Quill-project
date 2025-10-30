@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, computed  } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import { useAppState } from '../composables/useAppState'
 
 const props = defineProps({
@@ -13,11 +13,9 @@ const {getArticlesOnUser, formatDate} = useAppState()
 
 const emit = defineEmits(['editUser', 'view-article'])
 
-
-
 const userArticlesList = ref([])
-const visibleArticlesCount = ref(10)
-const articlesPerLoad = 10
+const visibleArticlesCount = ref(2)
+const articlesPerLoad = 2
 
 const visibleArticles = computed(() => {
   return userArticlesList.value.slice(0, visibleArticlesCount.value)
@@ -26,6 +24,7 @@ const visibleArticles = computed(() => {
 const hasMoreArticles = computed(() => {
   return visibleArticlesCount.value < userArticlesList.value.length
 })
+
 
 const loadArticles = async() => {
   try{
@@ -71,6 +70,7 @@ const saveProfile = () => {
 const viewArticle = (articleId) => {
   emit('view-article', articleId)
 }
+
 </script>
 
 <template>
@@ -92,8 +92,10 @@ const viewArticle = (articleId) => {
           type="text" 
           id="profile-nickname" 
           class="input"
+          @change="textChanged"
+          required
           v-model="profileData.nickname" 
-        />
+        ></input>
       </div>
       <button class="btn btn-primary" @click="saveProfile">
         Сохранить изменения
@@ -101,11 +103,11 @@ const viewArticle = (articleId) => {
     </div>
     
     <div class="user-articles">
-      <h3 class="card-title">Мои статьи ({{ userArticlesList.length }})</h3>
-      <div class="articles-grid grid grid-articles">
+      <h3 class="card-title">Мои статьи</h3>
+      <div class="articles-grid">
          <article v-for="article in visibleArticles" 
-                  :key="article.id"
-                  class="card article-card stack">
+        :key="article.id"
+       class="card article-card stack">
         <!-- Здесь будут статьи пользователя -->
         <header class="card-header">
           <h3 class="card-title">{{article.title}}</h3>
@@ -150,15 +152,8 @@ const viewArticle = (articleId) => {
   margin-bottom: 3rem;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display:block; margin-bottom:.5rem; font-weight:600; }
 
 .form-group input {
   width: 100%;

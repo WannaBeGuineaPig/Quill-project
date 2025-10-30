@@ -25,7 +25,7 @@ const {
   loadComments,
   getArticleId,
   getUserArticleRating, 
-  deleteArticle 
+  deleteArticleStat 
 } = useAppState()
 
 const articleId = Number(route.params.id)
@@ -105,13 +105,20 @@ watch(isLoggedIn, async (newVal) => {
   }
 })
 
-const handleEdit = () => {
-  router.push({ name: 'profile' })
+const handleEdit = (id) => {
+  router.push({ name: 'editArticle',params: { id }  })
 }
 
-const handleDelete = () => {
-  deleteArticle(articleId)
-  router.push({ name: 'home' })
+const handleDelete = async() => {
+  const ok = await deleteArticleStat(articleId)
+  if(ok.success){
+    alert("Удалено")
+    router.push({ name: 'home' })
+  }
+  else{
+    alert(ok.message)
+  }
+  
 }
 
 const handleBack = () => {

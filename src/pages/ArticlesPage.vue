@@ -11,7 +11,7 @@ const handleViewArticle = (id) => {
 }
 
 const handleAddArticle = () => {
-  router.push({ name: 'addArticle' })
+  router.push({ name: 'addArticle'})
 }
 
 

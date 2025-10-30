@@ -30,6 +30,12 @@ const registerData = ref({
   confirmPassword: ''
 })
 
+
+const showLoginPassword = ref(false)
+
+const showRegisterPassword = ref(false)
+const showConfirmPassword = ref(false)
+
 const submitLogin = async () => {
  
   const enterData ={
@@ -79,24 +85,24 @@ const submitRegister = async () => {
     }
     console.log('Отправка данных регистрации:', userData)
     console.log("props", props)
-    // emit("register",userData)
+    emit("register",userData)
 
-    const result = await register(userData)
-    console.log('Получен результат:', result)
-    message.value = String(result.message)
-    if(result.success){
+    // const result = await register(userData)
+    // console.log('Получен результат:', result)
+    // message.value = String(result.message)
+    // if(result.success){
       
-      messageType.value = 'success'
-      registerData.value = {
-      email: '',
-      nickname: '',
-      password: '',
-      confirmPassword: ''
-    }
-      switchForm()
-    }
+    //   messageType.value = 'success'
+    //   registerData.value = {
+    //   email: '',
+    //   nickname: '',
+    //   password: '',
+    //   confirmPassword: ''
+    // }
+    //   switchForm()
+    // }
 
-    alert(message.value)
+    // alert(message.value)
   
   } catch (error) {
     message.value = error
@@ -123,7 +129,21 @@ const switchForm = () => {
       </div>
       <div class="form-group">
         <label for="password">Пароль</label>
-        <input type="password" id="password" class="input" v-model="loginData.password" required />
+        <div class="password-input-wrapper">
+        <input :type="showLoginPassword?'text': 'password'" id="password" class="input" v-model="loginData.password" required />
+         <button 
+            type="button" 
+            class="password-toggle"
+            @click="showLoginPassword = !showLoginPassword"
+          >
+            <svg v-if="showLoginPassword" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+            </svg>
+            <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+          </button>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">Войти</button>
     </form>
@@ -139,17 +159,52 @@ const switchForm = () => {
       </div>
       <div class="form-group">
         <label for="reg-password">Пароль</label>
-        <input type="password" id="reg-password" class="input" v-model="registerData.password" required />
+        <div class="password-input-wrapper">
+        <input :type="showRegisterPassword?'text': 'password'"
+         id="reg-password" class="input" v-model="registerData.password" required />
+          <button 
+            type="button" 
+            class="password-toggle"
+            @click="showRegisterPassword = !showRegisterPassword"
+          >
+            <svg v-if="showRegisterPassword" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+            </svg>
+            <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="form-group">
         <label for="confirm-password">Подтвердите пароль</label>
-        <input type="password" id="confirm-password" class="input"  v-model="registerData.confirmPassword" required />
+          <div class="password-input-wrapper">
+          <input 
+            :type="showConfirmPassword ? 'text' : 'password'" 
+            id="confirm-password" 
+            class="input password-input" 
+            v-model="registerData.confirmPassword" 
+            required 
+          />
+          <button 
+            type="button" 
+            class="password-toggle"
+            @click="showConfirmPassword = !showConfirmPassword"
+          >
+            <svg v-if="showConfirmPassword" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+            </svg>
+            <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+            </svg>
+          </button>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
     </form>
-      <div v-if="message" :class="['message', messageType]">
+    <!-- <div v-if="message" :class="['message', messageType]">
       {{ message }}
-    </div>
+    </div> -->
     <p class="switch-hint">
       {{ formType === 'login' ? 'Нет аккаунта?' : 'Уже есть аккаунт?' }}
       <a href="#" @click.prevent="switchForm">
@@ -160,10 +215,42 @@ const switchForm = () => {
 </template>
 
 <style scoped>
+
+.password-toggle {
+  position: absolute;
+  right: 0.3rem;
+  top: 35%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  transition: background-color 0.2s;
+  display: flex;
+}
+
 .auth-form { max-width: 560px; width: 100%; margin: 0 auto; }
 .auth-form h2 { margin-bottom: 1rem; text-align: center; }
 .form-group { display:flex; flex-direction:column; gap:.5rem; }
-.auth-form button { width: 100%; padding: 0.85rem; margin-top: .5rem; font-size: 1rem;}
+.auth-form button {  padding: 0.85rem; margin-top: .5rem; font-size: 1rem;}
 .switch-hint { text-align: center; margin-top: 1rem; }
-@media (max-width: 576px) { .auth-form { padding: 1rem; } }
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  padding-right: 3rem; 
+  width: 100%;
+}
+
+@media (max-width: 576px) { .auth-form { padding: 1rem; }
+.password-toggle {
+    right: 0.5rem;
+  }
+}
 </style>

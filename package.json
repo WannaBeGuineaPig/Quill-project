@@ -13,8 +13,9 @@
   },
   "dependencies": {
     "@rollup/rollup-win32-x64-msvc": "^4.52.4",
+    "@vue/compiler-sfc": "^3.5.22",
     "axios": "^1.12.2",
-    "vue": "^3.5.18",
+    "vue": "^3.5.22",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {

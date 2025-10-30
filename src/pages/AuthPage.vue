@@ -17,7 +17,7 @@ const handleLogin = async(data) => {
 
   if(ok.success){
     console.log(ok)
-    alert("Успешная авторизация")
+    alert("Успешная авторизация!")
     router.push({ name: 'home' })
   }
   else{

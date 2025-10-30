@@ -70,6 +70,7 @@ export const loadArticles = async(filtrData) => {
 export const getArticleOnId = async(id) => {
   try{
     const response = await api.get(`/api/Article/GetArticleOnId?id=${id}`)
+    
     return response.data
   }
   catch(error){
@@ -94,6 +95,44 @@ try{
     throw new Error(errorMessage)
   }
 
+}
+
+export const addArticle = async(newArticle) =>{
+    try{
+       console.log("newArticle",newArticle)
+    const response  = await api.post("/api/Article/AddNewArticle", newArticle)
+    return response.data
+  }
+  catch(error){
+    const errorMessage = error.response?.data || 'Ошибка сохранения данных '+error
+    console.log(error)
+    throw new Error(errorMessage)
+  }
+}
+
+export const editArticle = async(newArticle) =>{
+   try{
+    console.log("newArticle",newArticle)
+    const response  = await api.put("/api/Article/ChangeArticle", newArticle)
+    return response.data
+  }
+  catch(error){
+    const errorMessage = error.response?.data || 'Ошибка сохранения данных '+error
+    console.log(error)
+    throw new Error(errorMessage)
+  }
+}
+
+export const deleteArticle = async(statusData)=>{
+   try{
+    const response  = await api.put("/api/Article/ChangeStatusArticle", statusData)
+    return response.data
+  }
+  catch(error){
+    const errorMessage = error.response?.data || 'Ошибка сохранения данных '+error
+    console.log(error)
+    throw new Error(errorMessage)
+  }
 }
 
 export const getAllTopics = async() =>{

@@ -1,14 +1,10 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed , onUnmounted} from 'vue'
 import { useAppState } from '@/composables/useAppState'
 
-const { formatDate } = useAppState()
+const { formatDate, state } = useAppState()
 const props = defineProps({
   isLoggedIn: {
-    type: Boolean,
-    default: false
-  },
-  isAdmin: {
     type: Boolean,
     default: false
   },
@@ -44,6 +40,10 @@ const isDisliked = computed(() => props.userRating === -1)
 const likesCount = computed(() => props.articleStats.likes)
 const dislikesCount = computed(() => props.articleStats.dislikes)
 
+const isCommentAuthor = (comment) => {
+  return state.currentUser?.nickname === comment.authorName
+}
+
 const submitComment = () => {
   if (commentText.value.trim()) {
     emit('add-comment', commentText.value.trim())
@@ -55,12 +55,16 @@ const vote = (value) => {
   emit('vote', value)
 }
 
-const editArticle = () => {
-  emit('edit-article')
+const editArticle = (id) => {
+
+  emit('edit-article', id)
 }
 
-const deleteArticle = () => {
-  emit('delete-article')
+const deleteArticle = () => 
+{
+  const confirmDelete = confirm("Вы уверены, что хотите удалить статью? Действие невозможно будет отменить")
+  if(confirmDelete){
+    emit('delete-article')}
 }
 
 const handleDeleteComment = (commentId) => {
@@ -72,6 +76,10 @@ const handleDeleteComment = (commentId) => {
 const goBack = () => {
   emit('back-to-list')
 }
+
+onUnmounted(() => {
+  
+})
 
 // Вычисляемое свойство для отформатированных комментариев
 const formattedComments = computed(() => {
@@ -85,10 +93,10 @@ const formattedComments = computed(() => {
 <template>
   <section class="article-detail glass stack">
     <div class="row space-between">
-      <button class="btn btn-secondary" @click="goBack">← Назад к списку</button>
+      <button class="back btn " @click="goBack">◄</button>
       <div class="row article-actions" v-if="isLoggedIn">
-        <button class="btn btn-secondary" v-if="isAuthor" @click="editArticle">Редактировать</button>
-        <button class="btn btn-danger" v-if="isAuthor || isAdmin" @click="deleteArticle">Удалить</button>
+        <button class="btn btn-secondary" v-if="isAuthor" @click="editArticle(currentArticle.id)">Редактировать</button>
+        <button class="btn btn-danger" v-if="isAuthor" @click="deleteArticle">Удалить</button>
       </div>
     </div>
     
@@ -124,6 +132,15 @@ const formattedComments = computed(() => {
         </div>
       </div>
     </div>
+     <div class="article-image-section" v-if="currentArticle.hasImage">
+      <img 
+        :src="currentArticle.imageUrl" 
+        :alt="currentArticle.title"
+        class="article-image"
+        @error="handleImageError"
+      />
+      
+    </div>
     
     <div class="article-content">
       <p>{{ currentArticle.content }}</p>
@@ -154,18 +171,22 @@ const formattedComments = computed(() => {
           class="comment glass"
         >
           <div class="comment-header row space-between">
-            <span class="comment-author brand-gradient"> {{ comment.authorName || 'Аноним' }}</span>
+            <div class="del row"> 
+              <span class="comment-author brand-gradient"> {{ comment.authorName || 'Аноним' }}</span>
+              <button 
+                v-if="isCommentAuthor(comment)" 
+                class="btn btn-danger btn-delete-small" 
+                @click="handleDeleteComment(comment.id)"
+              >
+                Удалить
+              </button>
+            </div>
+            
             <span class="date">{{ comment.formattedDate }}</span>
           </div>
           <p class="comment-text">{{ comment.content }}</p>
-
-          <button 
-            v-if="isAdmin || isAuthor" 
-            class="btn btn-ghost btn-delete-small" 
-            @click="handleDeleteComment(comment.id)"
-          >
-            Удалить
-          </button>
+          
+          
         </div>
       </div>
       
@@ -184,19 +205,23 @@ const formattedComments = computed(() => {
 .comments-section { margin-top: 2rem; padding: 0 5rem;}
 .comment { border-radius: 12px; padding: 1.2rem; position: relative; margin-bottom: 1rem;}
 
+.comment-author {margin-bottom: .4rem;}
 .comment-text { word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; line-height: 1.5; margin-bottom: 0.5rem;}
 
+.back.btn { background: none; color: var(--accent); font-size: larger; padding: 0 0; border: none;}
 .btn-delete-small { 
-  position: absolute; 
-  bottom: .5rem; 
-  right: .5rem; 
-  font-size: 0.8rem; 
-  padding: 0.3rem 0.6rem; 
+  float: right;
+  align-self: flex-start;
+  font-size: 0.75rem; 
+  padding: 0.3rem 0.7rem; 
 }
 .date.row { gap: .7rem; }
 
+.del { gap: 0.5rem;}
+
 .input{ padding: 1rem; }
 .rating-controls { gap: .4rem; }
+
 .no-comments { 
   text-align: center; 
   color: #666; 
@@ -205,8 +230,8 @@ const formattedComments = computed(() => {
 }
 
 .active-rating {
-  color: #8b5cf6 !important;
-  border-color: #8b5cf6 !important;
+  color: var(--accent);
+  border-color:  var(--accent);
 }
 
 @media (max-width: 768px) {

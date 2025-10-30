@@ -1,13 +1,13 @@
 import { reactive, computed,ref } from 'vue'
-import { registerUser, loginUser, changeUserInfo,loadArticles,getArticleOnId, getUserArticle, getAllTopics, getArticleComments, addNewComment, deleteCommentApi, getUserRating, setUserRating, deleteUserRating,} from '../userApi'
+import { registerUser, loginUser, changeUserInfo,loadArticles,getArticleOnId,
+   getUserArticle, getAllTopics, getArticleComments, addNewComment, deleteCommentApi, 
+   getUserRating, setUserRating, deleteUserRating, addArticle, editArticle,
+   deleteArticle} from '../userApi'
 
 // Simple global state for demo purposes (no backend)
 const state = reactive({
   currentUser: null, // { id, email, nickname, role: 'guest'|'user'|'admin', status }
-  users: [
-    { id: 1, email: 'admin@example.com', nickname: 'Admin', role: 'admin', status: 'active' },
-    { id: 2, email: 'user@example.com', nickname: 'UserOne', role: 'user', status: 'active' },
-  ],
+  users: null,
   articles: null,
   categories:ref([])
 })
@@ -151,16 +151,89 @@ export function useAppState() {
   
   const getArticleId = async(id) =>{
      try {
-       const result = await getArticleOnId(id) 
-    console.log("article", result)
-      return result
-      }
+        const result = await getArticleOnId(id) 
+        console.log("article", result)
+        const article = { ...result }
+        article.hasImage = false
+        
+        if (result.image) {
+          
+          article.imageUrl = await createImageUrlFromBase64(result.image)
+          console.log(article.imageUrl)
+          article.hasImage= true
+    }
+    
+    return article
+  }
    
     catch(error){
 
       console.log("error",error)
     }
   }
+
+const createImageUrlFromBase64 = async(base64String) => {
+  try {
+    // Определяем MIME type по началу base64 строки
+    let mimeType = 'image/jpeg' // по умолчанию
+    
+    if (base64String.startsWith('iVBOR')) {
+      mimeType = 'image/png'
+    } else if (base64String.startsWith('/9j/')) {
+      mimeType = 'image/jpeg'
+    } else if (base64String.startsWith('R0lGOD')) {
+      mimeType = 'image/gif'
+    } else if (base64String.startsWith('UklGR')) {
+      mimeType = 'image/webp'
+    }
+    
+    // ✅ Создаем Data URL
+    const dataUrl = `data:${mimeType};base64,${base64String}`
+    console.log(`Created ${mimeType} Data URL`)
+    
+    return dataUrl
+    
+  } catch (error) {
+    console.error("Error creating image URL from base64:", error)
+    return null
+  }
+}
+
+const createBase64FromImage = async(file,maxSizeMB = 5) =>{
+  try{
+  return new Promise((resolve, reject) => {
+    const maxSizeBytes = maxSizeMB * 1024 * 1024
+    
+    if (file.size > maxSizeBytes) {
+      reject(new Error(`Размер файла превышает ${maxSizeMB}MB`))
+      return
+    }
+    
+    if (!file.type.startsWith('image/')) {
+      reject(new Error('Файл должен быть изображением'))
+      return
+    }
+    
+    const reader = new FileReader()
+    
+    reader.onload = () => {
+      const base64String = reader.result.split(',')[1]
+      resolve(base64String)
+    }
+    
+    reader.onerror = () => {
+      reject(new Error('Не удалось прочитать файл'))
+    }
+    
+    reader.readAsDataURL(file)
+  })}
+  catch{
+    console.log("ошибка преобразования изображения")
+  }
+}
+
+
+
 
   const getArticlesOnUser = async() => {
     try {
@@ -175,33 +248,71 @@ export function useAppState() {
     }
   }
 
-  const addArticle = ({ title, content, theme }) => {
+  const addNewArticle = async(articleData) => {
+    try{
     if (!isLoggedIn.value) return false
     const newArticle = {
-      id: Date.now(), title, content, theme,
-      publishedAt: new Date().toISOString().slice(0,10), status: 'active',
-      authorId: currentUserId.value, votes: [], comments: [],
+      id: 0, 
+      title : articleData.title, 
+      content : articleData.content, 
+      publishedAt:'2025-12-13',
+      status:"active",
+      idTopics:articleData.topicId, 
+      authorId: currentUserId.value, 
+      image: articleData.image,
+
     }
-    state.articles.push(newArticle)
-    return newArticle.id
+    console.log("добавление статьи", newArticle)
+    const result = await addArticle(newArticle)
+     return { success: true, message: "Успешно сохранено" }}
+    catch(error){
+    console.log("addingArticle",error)
+    return { success: false, message: error.message }
+  }
+}
+
+  const editArticleInfo = async(articleData) => {
+    try{
+    if (!isLoggedIn.value) return false
+    const newArticle = {
+      id: articleData.id, 
+      title : articleData.title, 
+      content : articleData.content, 
+       publishedAt:"2025-12-13",
+      status:"active",
+      idTopics:articleData.topicId, 
+      authorId: currentUserId.value, 
+      image: articleData.image,
+    }
+    console.log("редактирование статьи", newArticle)
+    const result = await editArticle(newArticle)
+     return { success: true, message: "Успешно сохранено" }}
+    catch(error){
+    console.log("editArticle",error)
+    return { success: false, message: error.message }
+  }
   }
 
-  const editArticle = (id, data) => {
-    const a = state.articles.find(a => a.id === id)
-    if (!a) return false
-    Object.assign(a, data)
-    return true
-  }
-
-  const deleteArticle = (id) => {
-    const idx = state.articles.findIndex(a => a.id === id)
-    if (idx !== -1) state.articles.splice(idx,1)
+  const deleteArticleStat = async(id) => {
+   try{
+      const statusData ={
+        id:id,
+        status:"deleted"
+      }
+      const result = await deleteArticle(statusData)
+       return { success: true, message: "Успешно удалено" }
+   }
+   catch{
+       return { success: false, message: error.message }
+   }
   }
 
   const blockArticle = (id) => {
     const a = state.articles.find(a => a.id === id)
     if (a) a.status = 'blocked'
   }
+
+  
 
   // const voteArticle = (id, value) => {
   //   if (!isLoggedIn.value) return false
@@ -366,9 +477,7 @@ const addCommentToArticle = async (articleId, text) => {
     login,
     register,
     logout,
-    addArticle,
-    editArticle,
-    deleteArticle,
+    deleteArticleStat,
     blockArticle,
     voteArticle,
     addComment,
@@ -387,5 +496,9 @@ const addCommentToArticle = async (articleId, text) => {
     getUserArticleRating,
     setUserArticleRating,
     removeUserArticleRating,
+    createBase64FromImage,
+    addNewArticle,
+    editArticleInfo, 
+    
   }
 }
