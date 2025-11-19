@@ -1,0 +1,687 @@
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\appsettings.json
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.staticwebassets.endpoints.json
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.exe
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.dll
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+C:\Users\safin\source\repos\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\source\repos\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\appsettings.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\TEST.exe
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\TEST.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.TEST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.build.TEST.props
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TEST.props
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TEST.props
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+C:\Users\AKBARS\Desktop\Colege\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+D:\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.json
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.staticwebassets.endpoints.json
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.exe
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+D:\TEST\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+D:\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.dll
+D:\TEST\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+D:\TEST\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+D:\TEST\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.staticwebassets.endpoints.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.exe
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+C:\Users\safin\OneDrive\Desktop\TEST\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\appsettings.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\TEST.exe
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\TEST.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.TEST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.build.TEST.props
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TEST.props
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TEST.props
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+C:\Users\AKBARS\Desktop\Test_qroup\TEST\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\appsettings.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\TEST.exe
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\TEST.deps.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\TEST.runtimeconfig.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\TEST.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\TEST.pdb
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Humanizer.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.csproj.AssemblyReference.cache
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfoInputs.cache
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.AssemblyInfo.cs
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.csproj.CoreCompileInputs.cache
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.TEST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.build.TEST.props
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TEST.props
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TEST.props
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\scopedcss\bundle\TEST.styles.css
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.csproj.Up2Date
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\refint\TEST.dll
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.pdb
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\TEST.genruntimeconfig.cache
+C:\Users\lilih\OneDrive\Рабочий стол\Unit тесты\TEST\TEST\obj\Debug\net8.0\ref\TEST.dll

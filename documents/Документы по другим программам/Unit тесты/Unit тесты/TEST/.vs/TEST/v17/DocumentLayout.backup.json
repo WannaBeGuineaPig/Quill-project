@@ -1,0 +1,399 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\dto\\testdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\dto\\testdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\testresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\testresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\examproctoringsuitecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\examproctoringsuitecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\testcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\testcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\dto\\useranswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\dto\\useranswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\model\\dto\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\model\\dto\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\test.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\test.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|c:\\users\\safin\\onedrive\\desktop\\test\\test\\test\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F9AF3C-C6A0-4F4D-BC22-A40CE39AF1AD}|TEST\\TEST.csproj|solutionrelative:test\\controllers\\answercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:16:15.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T05:27:25.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestResultController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TestResultController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\TestResultController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TestResultController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\TestResultController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAqwNIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T05:13:23.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TestController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\TestController.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAwwDABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T05:32:15.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestionDto.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\QuestionDto.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\DTO\\QuestionDto.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\QuestionDto.cs",
+              "RelativeToolTip": "TEST\\Model\\DTO\\QuestionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T20:17:01.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestDto.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\TestDto.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\DTO\\TestDto.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\TestDto.cs",
+              "RelativeToolTip": "TEST\\Model\\DTO\\TestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T20:16:24.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\TeacherController.cs*",
+              "RelativeToolTip": "TEST\\Controllers\\TeacherController.cs*",
+              "ViewState": "AgIAAF0CAAAAAAAAAAAwwHwCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T19:35:53.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Program.cs",
+              "RelativeDocumentMoniker": "TEST\\Program.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Program.cs",
+              "RelativeToolTip": "TEST\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T19:48:38.456Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAYwAMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T14:52:43.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExamProctoringSuiteContext.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\ExamProctoringSuiteContext.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\ExamProctoringSuiteContext.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\ExamProctoringSuiteContext.cs",
+              "RelativeToolTip": "TEST\\Model\\ExamProctoringSuiteContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:23:24.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestCategory.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\TestCategory.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\TestCategory.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\TestCategory.cs",
+              "RelativeToolTip": "TEST\\Model\\TestCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T07:23:54.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserAnswerDto.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\UserAnswerDto.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\DTO\\UserAnswerDto.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\UserAnswerDto.cs",
+              "RelativeToolTip": "TEST\\Model\\DTO\\UserAnswerDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:58:49.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\UpdateProfileDto.cs",
+              "RelativeDocumentMoniker": "TEST\\Model\\DTO\\UpdateProfileDto.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Model\\DTO\\UpdateProfileDto.cs",
+              "RelativeToolTip": "TEST\\Model\\DTO\\UpdateProfileDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:20:13.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\QuestionController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\QuestionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvyUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T05:03:51.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TEST\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TEST\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T03:16:32.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TEST\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\appsettings.Development.json",
+              "RelativeToolTip": "TEST\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T03:16:24.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\appsettings.json",
+              "RelativeDocumentMoniker": "TEST\\appsettings.json",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\appsettings.json",
+              "RelativeToolTip": "TEST\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T19:48:34.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TEST.http",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\TEST.http",
+              "RelativeDocumentMoniker": "TEST\\TEST.http",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\TEST.http",
+              "RelativeToolTip": "TEST\\TEST.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-23T19:48:41.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TEST",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\TEST.csproj",
+              "RelativeDocumentMoniker": "TEST\\TEST.csproj",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\TEST.csproj",
+              "RelativeToolTip": "TEST\\TEST.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T03:39:55.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AnswerController.cs",
+              "DocumentMoniker": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\AnswerController.cs",
+              "RelativeDocumentMoniker": "TEST\\Controllers\\AnswerController.cs",
+              "ToolTip": "C:\\Users\\safin\\OneDrive\\Desktop\\TEST\\TEST\\TEST\\Controllers\\AnswerController.cs",
+              "RelativeToolTip": "TEST\\Controllers\\AnswerController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T05:09:52.984Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 101,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
